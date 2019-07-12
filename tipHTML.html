@@ -1,31 +1,48 @@
-<div id= "tipHead"> <h1>Tip Calacutor</h1>
+<!-- You're going to need this doctype declaration in all of your html documents so the browser knows what it's rendering. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- You will often place your script tag here dependent on when you want your js to laod. -->
+</head>
 
-    <form id="tipForm">
-    
-    <p>Total Cost of the Bill</p>
-      <input id="billAmt" type = "text" placeholder="Amount of meal"></input>
-    
-    <p>Service Tip: How was the service? </p>
-      <select id="serviceAmt">
-        <option disabled selected value ="-1"> Choose your tip amount</option>
-        <option value = "0.2"> 20&#37;&#45;Great</option>
-        <option value = "0.15">  15&#37;&#45;Good</option>
-        <option value = "0.10">  10&#37;&#45;Okay </option>
-        <option value = "0.5" >  5&#37;&#45;Bad </option>
-        <option value = "0.0">  0&#37;&#45;Never Again </option> 
-        
-      </select>
+<body>
+  <!-- all of the html that you are going to show the user is going to be inside of the body tags. -->
+    <div id= "tipHead"> <h1>Tip Calacutor</h1>
+
+      <form id="tipForm">
       
-    </form>
-    
-    <button type="button" id="Cal"> Calulate</button>
-    
-    <div id="tipDisplay">
-      <sup>$</sup><span id="tip">0.00</span>
-    </div>
-    
-    </div>
-    <!-- End of tip Div -->
-    
-    
-    <script type="text/javascript" src="tipCal.js"></script>
+      <p>Total Cost of the Bill</p>
+        <input id="billAmt" type = "text" placeholder="Amount of meal"></input>
+      
+      <p>Service Tip: How was the service? </p>
+        <select id="serviceAmt">
+          <option disabled selected value ="-1"> Choose your tip amount</option>
+          <option value = "0.2"> 20&#37;&#45;Great</option>
+          <option value = "0.15">  15&#37;&#45;Good</option>
+          <option value = "0.10">  10&#37;&#45;Okay </option>
+          <option value = "0.5" >  5&#37;&#45;Bad </option>
+          <option value = "0.0">  0&#37;&#45;Never Again </option> 
+          
+        </select>
+        
+      </form>
+      
+      <button type="button" id="Cal"> Calulate</button>
+      
+      <div id="tipDisplay">
+        <sup>$</sup><span id="tip">0.00</span>
+      </div>
+      
+      </div>
+      <!-- End of tip Div -->
+      
+      <!-- Make sure to be using either relative or absolute path. Here I'm using relative path. -->
+      <script type="text/javascript" src="./tipCal.js"></script>
+</body>
+</html>
+
+
