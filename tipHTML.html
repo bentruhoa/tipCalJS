@@ -1,0 +1,31 @@
+<div id= "tipHead"> <h1>Tip Calacutor</h1>
+
+    <form id="tipForm">
+    
+    <p>Total Cost of the Bill</p>
+      <input id="billAmt" type = "text" placeholder="Amount of meal"></input>
+    
+    <p>Service Tip: How was the service? </p>
+      <select id="serviceAmt">
+        <option disabled selected value ="-1"> Choose your tip amount</option>
+        <option value = "0.2"> 20&#37;&#45;Great</option>
+        <option value = "0.15">  15&#37;&#45;Good</option>
+        <option value = "0.10">  10&#37;&#45;Okay </option>
+        <option value = "0.5" >  5&#37;&#45;Bad </option>
+        <option value = "0.0">  0&#37;&#45;Never Again </option> 
+        
+      </select>
+      
+    </form>
+    
+    <button type="button" id="Cal"> Calulate</button>
+    
+    <div id="tipDisplay">
+      <sup>$</sup><span id="tip">0.00</span>
+    </div>
+    
+    </div>
+    <!-- End of tip Div -->
+    
+    
+    <script type="text/javascript" src="tipcalculator.js"></script>
